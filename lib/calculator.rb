@@ -17,4 +17,20 @@ class Calculator
     @total -= number
     return(self)
   end
+
+  def mult(number)
+    @total *= number
+    return(self)
+  end
+
+  def div(number)
+    @total /= number
+    return(self)
+  end
+
+  def sqrt
+    @total = Math.sqrt(@total).to_f
+    return(self)
+  end
+
 end
